@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>グラフを描画してみる</title>
+        <link rel="stylesheet" href="./css/base.css">
+        <title>コンピュータとあっちむいてホイ</title>
     </head>
 
     <body>
         <header>
-            <h1>グラフを描画する</h1>
+            <h1>コンピュータとあっちむいてホイ</h1>
         </header>
 
+
         <div>
-            <h2>折れ線グラフ</h2>
-            <canvas id="lineChart"></canvas>
+            <h2>僕とあっちむいてホイしましょう。</h2>
+
+           <img src="./image/cpt.png" width="150" alt="computer">
+           <p id="acchi">あっちむいてーーーーーーホイッ!!!</p>
+        </div>   
+
+        <div >
+           <img class="img_wrap" src="./image/ue.png" onclick="acchimuitehoi(0)" width="150" alt="上を指す">
+           <img class="img_wrap" src="./image/hidari.png" onclick="acchimuitehoi(1)" width="150" alt="右を指す">
+           <img class="img_wrap" src="./image/sita.png" onclick="acchimuitehoi(2)" width="150" alt="下を指す">
+           <img class="img_wrap" src="./image/migi.png" onclick="acchimuitehoi(3)" width="150" alt="左を指す">
+
+            <!-- <table>
+                <tr>
+                    <td><img src="./image/ue.png" onclick="acchimuitehoi(0)" width="150"></td>
+                    <td><img src="./image/hidari.png" onclick="acchimuitehoi(1)" width="150"></td>
+                    <td><img src="./image/sita.png" onclick="acchimuitehoi(2)" width="150"></td>
+                    <td><img src="./image/migi.png" onclick="acchimuitehoi(3)" width="150"></td>
+                </tr>    
+            </table> -->
         </div>
 
         <div>
-            <h2>レイダーグラフ</h2>
-            <canvas id="radarChart"></canvas>
+            <p>(指したい方向を選んでください)</p>
+            <p id="result"></p>
         </div>
 
-        <!-- 外部のjavascriptファイルを読み込む -->
-        <!-- 読み込む順番が重要 -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
-        <!-- Chart.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js" integrity="sha512-lUsN5TEogpe12qeV8NF4cxlJJatTZ12jnx9WXkFXOy7yFbuHwYRTjmctvwbRIuZPhv+lpvy7Cm9o8T9e+9pTrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <div>
+             <h2>僕とあっちむいてホイしましょう。</h2>
 
-        <!-- jQueryを使ってみる -->
-        <script src="js/test-chart.js"></script>
-        
-        </script>
+            <img src="./image/否定.png" width="150" alt="否定">
+            <p id="acchi">あっちむいてーーーーーー、、、、</p> -->
+         
+            <!-- 0:↑ 1:→ 2:↓ 3:← -->
+            <!-- <button type="button" onclick="acchimuitehoi(0)">↑</button> -->
+            <!-- <img src="./image/ue.png" width="100" alt="↑" /> -->
+
+            <!-- <button type="button" onclick="acchimuitehoi(1)">→</button> -->
+            <!-- <img src="./image/hidari.png" width="100" alt="→" /> -->
+
+            <!-- <button type="button" onclick="acchimuitehoi(2)">↓</button> -->
+            <!-- <img src="./image/sita.png" width="100" alt="↓" /> -->
+
+            <!-- <button type="button" onclick="acchimuitehoi(3)">←</button> -->
+            <!-- <img src="./image/migi.png" width="100" alt="←" /> -->
+
+            <!-- <p>(指したい方向を選んでください)</p> -->
+        <!-- </div> -->
+
+        <!-- <div id="acchimuitehoi-result"> -->
+            <!-- <p id="acchimuitehoi-result-p"></p> -->
+        <!-- </div> -->
+
+
+        <script src="js/assinment.js"></script>
     </body>
+
 </html>
