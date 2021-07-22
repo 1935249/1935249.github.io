@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+table {
+            font-size: 3rem;
+            text-align: center;
+
+}
+
+
+.img_wrap {
+    border-radius: 30px;
+}
+
+.img_wrap:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+  }
+  
+
+body {
+
+    font-size: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-align: center;
+}
+
+h2 {
+
+    background-color: lightgreen;
+}
+#acchi {
+
+    font-size: 30px;
+
+    color: green;
+}
+
+#result {
+
+    font-size: 30px;
+
+    color: green;
+}
