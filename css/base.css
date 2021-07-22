@@ -38,9 +38,18 @@ h2 {
     color: green;
 }
 
-#result {
+#result1 {
 
     font-size: 30px;
 
     color: green;
+}
+
+#result2 {
+
+    font-size: 50px;
+
+    color: white;
+
+    background-color: green;
 }

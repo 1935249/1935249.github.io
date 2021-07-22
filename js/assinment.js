@@ -64,7 +64,8 @@ function acchimuitehoi(myFinger) {
     var messageArray = ['あなたの勝ちです', '僕の勝ちです'];
     // alert('ほいっ！！！！あなたの指は' + fingerArray[myFinger] + ', 僕の顔は' + fingerArray[computerFace] + ', なので' + messageArray[victory]);
 
-    document.getElementById("result").textContent = ('あなたの指は' + fingerArray[myFinger] + ', 僕の顔は' + fingerArray[computerFace] + ', なので' + messageArray[victory]);
+    document.getElementById("result1").textContent = ('あなたの指は' + fingerArray[myFinger] + ', 僕の顔は' + fingerArray[computerFace] + ', なので');
+    document.getElementById("result2").textContent = (messageArray[victory]);
 
     // $('#acchimuitehoi-result-p').text('あなたの指は' + fingerArray[myFinger] + ', コンピュータの顔は' + fingerArray[computerFace] + ', なので' + messageArray[victory]);
 }
